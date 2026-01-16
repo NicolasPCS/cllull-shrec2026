@@ -302,17 +302,6 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
-
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
@@ -342,6 +331,9 @@
   </div>
 </section>
 
+<!--------------------------------------------------------------------------------------------->
+<!--------------------------------- HERE STARTS OUR CONTENT ----------------------------------->
+<!--------------------------------------------------------------------------------------------->
 
 <!-- Teaser video-->
 <section class="hero teaser">
@@ -484,6 +476,108 @@ This track is designed to challenge and evaluate the ability of state-of-the-art
 </section> -->
 <!-- End video carousel -->
 
+<!-- Track -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">The Track</h2>
+        <div class="content has-text-justified">
+          <p>
+            In cultural heritage, the value of an artifact often lies not in its overall shape,
+but in its surface details—such as engravings, erosion patterns and reliefs. This
+track focuses on 3D analysis to achieve geometric fidelity in 3D reconstruction from
+multiple-view images. We introduce a novel challenge focused on retrieving objects
+based on localized surface features rather than global structure.
+We present a controlled synthetic dataset inspired by the intricate stone reliefs found
+in heritage artifacts (such as Khachkars or decorative steles). The dataset consists
+of parametrically generated meshes derived from a canonical cube primitive. These
+objects are procedurally sculpted to emulate the engraving and relief patterns of
+real-world artifacts.
+By participating in this track, researchers will test the ability of their algorithms
+to reconstruct 3D objects from a synthetic but realistic rendering of Khachkars
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">The Challenge</h2>
+        <div class="content has-text-justified">
+          <p>
+            The challenge is to reconstruct the objects from their 2D renderings. Researchers may employ
+any 3D reconstruction methods they find suitable. Evaluation will be performed
+using the weighted metric described above.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">The Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+<strong>The Dataset & Feature-Aware Ground Truth</strong>
+<br/>
+The dataset is generated using a novel procedural pipeline that combines mesh
+sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex
+semantic metadata.<br/><br/>
+The reconstruction similarity to the ground truth can be ponderated by using the
+weights provided by each category in the per-vertex metadata. We refer to this as
+the “Semantic Weighting Scheme.” An initial set of weights is associated with the
+following ground truth categories:
+<li>Corners: High importance to corner preservation (structural integrity).</li>
+<li>Edges: Moderate importance to sharp transitions.</li>
+<li>Sculpted Reliefs: Priority given to the artistic/historical surface content.</li>
+<li>Flat Faces: Baseline importance.</li>
+
+<br/><br/>
+<strong>Dataset Characteristics:</strong>
+<br/>
+Researchers will be provided with the renderings of the objects to facilitate their
+reconstructions.
+<li>Materiality: Objects are rendered with physically based materials (high rough-
+ness, low metallicity) approximating diffuse stone.</li>
+<li>Environment: The rendering uses two suns to create a realistic world scenario
+and an HDRI map to enhance realistic illumination reflection.</li>
+<li>Resolution: Images will be 1920 × 1080 pixels in PNG format.</li>
+
+<br/><br/>
+<strong>Dataset Elaboration</strong><br/>
+<image src="static/images/image_gray_scale.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
+<image src="static/images/camera_poses.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
+
+<image src="static/images/Renderings_1.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
+<image src="static/images/Renderings_2.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
+<image src="static/images/Renderings_3.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
+
+<image src="static/images/Extract_back_add_texture.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
+We take an image and sculpt the content into a 3D mesh. After that, we render 90 images
+in Blender with realistic conditions. We provide this renderings, which practicioners
+should use to reconstruct the 3D objects. We will coollect the 3D objects and
+evaluate the quality using a Feature-Aware Weighted Metric (Weighted Chamfer Distance).
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 
@@ -503,6 +597,41 @@ This track is designed to challenge and evaluate the ability of state-of-the-art
     </div>
   </section>
 <!--End paper poster -->
+
+
+<!-- Important dates -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">SHREC Time Schedule<br/>Important dates</h2>
+        <div class="content has-text-justified is-normal">
+          <p>
+            SHREC Time Schedule
+
+Important dates
+
+    <br>• <strong>January 9, 2026:</strong> Submission deadline for track proposals.
+    <br>•  <strong>January 12, 2026:</strong> Notification of acceptance of track proposals.
+    <br>• <strong>January 12 to April 20, 2026:</strong> Each track has its own time line.
+    <br>•  <strong>April 20, 2026:</strong> Submission deadline for full papers for review.
+  <!--
+    <br>•  <strong>May 25, 2026:</strong> First review done, first stage decision on acceptance or rejection.
+    <br>•  <strong>June 19, 2026:</strong> First revision due.
+    <br>•  <strong>July 3, 2026:</strong> Second stage of reviews complete, decision on acceptance, rejection, or acceptance as short paper.
+    <br>•  <strong>July 20, 2026:</strong> Final version submission.
+    <br>• <strong>July 30, 2026:</strong> Final decision on acceptance or rejection.
+    <br>•  <strong>September 2026:</strong> Publication online in Computers & Graphics journal.
+    <br>• <strong>September 3-4, 2026:</strong> Presentation at the Eurographics 2026 Symposium on 3D Object Retrieval.
+   -->
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 
 
