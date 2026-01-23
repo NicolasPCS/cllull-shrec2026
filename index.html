@@ -302,17 +302,6 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
-
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
@@ -342,6 +331,9 @@
   </div>
 </section>
 
+<!--------------------------------------------------------------------------------------------->
+<!--------------------------------- HERE STARTS OUR CONTENT ----------------------------------->
+<!--------------------------------------------------------------------------------------------->
 
 <!-- Teaser video-->
 <section class="hero teaser">
@@ -358,13 +350,74 @@
           alt="Teaser visualization of the project"
           class="teaser-image"
           loading="lazy"
+		  width="300"
+        >
+		<img 
+          src="static/images/frame_042_normal.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+        >
+		<img 
+          src="static/images/frame_042_large.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+        >
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;
+		<img 
+          src="static/images/frame_042_realistic.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+        >
+		<img 
+          src="static/images/frame_042_wide.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+        >
+		
+      </div>
+      <!-- TODO: Replace with your video description -->
+      <h2 class="subtitle has-text-centered">
+        Dataset construction: from one image, take its illumination information and get 4 different objects: normal, large, realistic and wide.
+      </h2>
+    </div>
+	
+	<div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/videos/banner_video.mp4" type="video/mp4">
+      </video> -->
+      <!-- Teaser image -->
+      <div class="teaser-image-wrapper" align="middle">
+		<img 
+          src="static/images/Renderings_1.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+		  align="middle"
+          loading="lazy"
+		  width="600"
         >
       </div>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Convert the original image to grayscale, then scale.
+        Rendering samples for the realistic verision. Participants will be provided with 90 renderings similar to these for reconstructing each object.
       </h2>
     </div>
+	
   </div>
 </section>
 <!-- End teaser video -->
@@ -381,7 +434,7 @@
             This track aims to shift the focus of 3D retrieval from global shape matching to the recognition of fine-grained, localized surface details—such as engravings, erosion patterns and reliefs, which are often the defining features of cultural heritage artifacts (e.g., armenian Khachkars). Key elements of the proposal:
 
 <br>• <strong>Task:</strong> 3D reconstruction and retrieval based on localized surface features from multi-view synthetic renderings.
-<br>• <strong>Novel Dataset:</strong> A procedurally generated, semantically annotated synthetic dataset of sculpted stone artifacts, providing full control and a feature-aware ground truth with per-vertex semantic categories (e.g., corners, edges, sculpted reliefs).
+<br>• <strong>Novel Synthetic Dataset:</strong> A procedurally generated, semantically annotated synthetic dataset of sculpted stone artifacts, providing full control and a feature-aware ground truth with per-vertex semantic categories (e.g., corners, edges, sculpted reliefs).
 <br>• <strong>Evaluation:</strong> A novel "Semantic Weighting Scheme" for evaluation, allowing performance metrics to be weighted by the cultural or structural importance of different surface regions.
 <br>• <strong>Replicability:</strong> The synthetic pipeline ensures reproducibilty.<br>
 
@@ -401,32 +454,33 @@ This track is designed to challenge and evaluate the ability of state-of-the-art
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
+	   <h2 class="title is-3">Dataset Samples</h2><br/>Participants will be provided with 90 rendering captures around the generated objects. Here are some captures for the dataset.
         <!-- TODO: Replace with your research result images -->
         <img src="static/images/frame_042_realistic.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          Renderings for object realistic from image 0001.
+          Rendering for object 0001, realistic version.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/frame_042_large.png" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Renderings for object large from image 0001.
+          Rendering for object 0001, large version.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/frame_042_normal.png" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Renderings for object normal from image 0001.
+          Rendering for object 0001, normal version.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
       <img src="static/images/frame_042_wide.png" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Renderings for object wide from image 0001.
+        Rendering for object 0001, wide version.
       </h2>
     </div>
   </div>
@@ -484,25 +538,239 @@ This track is designed to challenge and evaluate the ability of state-of-the-art
 </section> -->
 <!-- End video carousel -->
 
+<!-- Track -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">The Track</h2>
+        <div class="content has-text-justified">
+          <p>
+            In cultural heritage, the value of an artifact often lies not in its overall shape,
+but in its surface details—such as engravings, erosion patterns and reliefs. This
+track focuses on 3D analysis to achieve geometric fidelity in 3D reconstruction from
+multiple-view images. We introduce a novel challenge focused on retrieving objects
+based on localized surface features rather than global structure.
+We present a controlled synthetic dataset inspired by the intricate stone reliefs found
+in heritage artifacts (such as Khachkars or decorative steles). The dataset consists
+of parametrically generated meshes derived from a canonical cube primitive. These
+objects are procedurally sculpted to emulate the engraving and relief patterns of
+real-world artifacts.<br/><br/>
+By participating in this track, researchers will test the ability of their algorithms
+to reconstruct 3D objects from a synthetic but realistic dataset of 2D renderings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">The Challenge</h2>
+        <div class="content has-text-justified">
+          <p>
+		  As mentioned before, 2D renderings are generated from 90 poses around each object.
+            The challenge is to <strong>reconstruct the objects from their 2D renderings</strong>; that is, to recompose the original 3D object from these renderings.
+			<br/><br/>
+			Researchers may employ
+any 3D reconstruction methods they find suitable. Evaluation will be performed
+using the weighted metric described above.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">The Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+<strong><h3>The Dataset & Feature-Aware Ground Truth</h3></strong>
+<br/>
+The dataset is generated using a novel procedural pipeline that combines mesh
+sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex
+semantic metadata.<br/><br/>
+The reconstruction similarity to the ground truth can be ponderated by using the
+weights provided by each category in the per-vertex metadata. We refer to this as
+the “Semantic Weighting Scheme.” An initial set of weights is associated with the
+following ground truth categories:
+<li>Corners: High importance to corner preservation (structural integrity).</li>
+<li>Edges: Moderate importance to sharp transitions.</li>
+<li>Sculpted Reliefs: Priority given to the artistic/historical surface content.</li>
+<li>Flat Faces: Baseline importance.</li>
+
+<div class="hero-body">
+	<div class="teaser-image-wrapper" align="middle">
+		<img 
+          src="static/images/Weights.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+		>
+      </div>
+      <!-- TODO: Replace with your video description -->
+      <h5 class="subtitle has-text-centered">
+        Per-vertex classification.
+      </h5>
+    </div>
+		
+		
+
+<br/><br/>
+<strong><h3>Dataset Characteristics:</h3></strong>
+<br/>
+Researchers will be provided with the renderings of the objects to facilitate their
+reconstructions.
+<li>Materiality: Objects are rendered with physically based materials (high rough-
+ness, low metallicity) approximating diffuse stone.</li>
+<li>Environment: The rendering uses two suns to create a realistic world scenario
+and an HDRI map to enhance realistic illumination reflection.</li>
+<li>Resolution: Images will be 1920 × 1080 pixels in PNG format.</li>
+
+<br/><br/>
+<strong><h3>Dataset Elaboration</h3></strong><br/>
+
+We take an image and sculpt the content into a 3D mesh. After that, we render 90 images
+in Blender with realistic conditions. 
+
+<div class="hero-body">
+	<div class="teaser-image-wrapper" align="middle">
+		<image src="static/images/image_gray_scale.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
+	</div>
+  <h5 class="subtitle has-text-centered">
+	Extract illumination information and use it as height for the mesh.
+  </h5>
+</div>
+
+<div class="hero-body">
+<div class="teaser-image-wrapper" align="middle">
+<image src="static/images/camera_poses.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
+</div>
+
+  <!-- TODO: Replace with your video description -->
+  <h5 class="subtitle has-text-centered">
+	90 camera poses around the object.
+  </h5>
+</div>
+
+<div class="hero-body">
+
+	<div class="teaser-image-wrapper" align="middle">
+		<image src="static/images/Renderings_1.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
+		<image src="static/images/Renderings_2.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
+		<image src="static/images/Renderings_3.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
+	</div>
+	  <h5 class="subtitle has-text-centered">
+	  Samples of image renderings provided to participants.
+	  </h5>
+</div>
+
+<strong>We provide these renderings</strong>, which practicioners
+should use to reconstruct the 3D objects. We will coollect the 3D objects and
+evaluate the quality using a Feature-Aware Weighted Metric (Weighted Chamfer Distance).
+
+
+<div class="hero-body">
+	<div class="teaser-image-wrapper" align="middle">
+		<image src="static/images/Extract_back_add_texture.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
+	</div>	
+	<h5 class="subtitle has-text-centered">
+		Extraction of Background.
+	</h5>
+</div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">Evaluation Criteria and Query Set</h2>
+        <div class="content has-text-justified">
+          <p>
+            This track does not use a query set. Participants will reconstruct 3D models from the provided multi-view renderings, and submissions will be evaluated against ground-truth meshes with annotated data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
 
 
 <!-- Paper poster -->
+<!--
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
       <!-- TODO: Replace with your poster PDF -->
+	  <!--
       <iframe  src="static/pdfs/SHREC_2026_Proposal.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
   </section>
+  -->
 <!--End paper poster -->
+
+
+
+<!-- Important dates -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">SHREC Time Schedule<br/>Important dates</h2>
+        <div class="content has-text-justified is-normal">
+          <p>
+            SHREC Time Schedule
+
+Important dates
+
+    <br>• <strong>January 9, 2026:</strong> Submission deadline for track proposals.
+    <br>•  <strong>January 12, 2026:</strong> Notification of acceptance of track proposals.
+	<br>• <strong>January 20 to March 30, 2026:</strong> Accepting 3D reconstruction submissions.
+    <br>• <strong>March 30 to April 10, 2026:</strong> Evaluation of 3D reconstructions and article elaboration.
+    <br>•  <strong>April 20, 2026:</strong> Submission deadline for full papers for review.
+  <!--
+    <br>•  <strong>May 25, 2026:</strong> First review done, first stage decision on acceptance or rejection.
+    <br>•  <strong>June 19, 2026:</strong> First revision due.
+    <br>•  <strong>July 3, 2026:</strong> Second stage of reviews complete, decision on acceptance, rejection, or acceptance as short paper.
+    <br>•  <strong>July 20, 2026:</strong> Final version submission.
+    <br>• <strong>July 30, 2026:</strong> Final decision on acceptance or rejection.
+    <br>•  <strong>September 2026:</strong> Publication online in Computers & Graphics journal.
+    <br>• <strong>September 3-4, 2026:</strong> Presentation at the Eurographics 2026 Symposium on 3D Object Retrieval.
+   -->
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 
 
