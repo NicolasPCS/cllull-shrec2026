@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage">
+  <meta name="title" content="SHREC 2026: Reconstruction of High-Frequency Geometry in Synthetic Heritage">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="The dataset is generated using a novel procedural pipeline that combines mesh sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex semantic metadata.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -21,7 +21,7 @@
   <!-- TODO: Replace with your institution or lab name -->
   <meta property="og:site_name" content="Shape Vision Lab">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage">
+  <meta property="og:title" content="SHREC 2026: Reconstruction of High-Frequency Geometry in Synthetic Heritage">
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="The dataset is generated using a novel procedural pipeline that combines mesh sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex semantic metadata.">
   <!-- TODO: Replace with your actual website URL -->
@@ -44,7 +44,7 @@
   <!-- TODO: Replace with first author's Twitter handle -->
   <meta name="twitter:creator" content="@ShapeVisionLab">
   <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage">
+  <meta name="twitter:title" content="SHREC 2026: Reconstruction of High-Frequency Geometry in Synthetic Heritage">
   <!-- TODO: Same as description above -->
   <meta name="twitter:description" content="The dataset is generated using a novel procedural pipeline that combines mesh sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex semantic metadata.">
   <!-- TODO: Same as social preview image above -->
@@ -267,7 +267,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage</h1>
+            <h1 class="title is-1 publication-title">SHREC 2026: Reconstruction of High-Frequency Geometry in Synthetic Heritage</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
@@ -549,15 +549,16 @@ This track is designed to challenge and evaluate the ability of state-of-the-art
             In cultural heritage, the value of an artifact often lies not in its overall shape,
 but in its surface details—such as engravings, erosion patterns and reliefs. This
 track focuses on 3D analysis to achieve geometric fidelity in 3D reconstruction from
-multiple-view images. We introduce a novel challenge focused on retrieving objects
+multiple-view images.
+<li>We introduce a novel challenge focused on retrieving objects
 based on localized surface features rather than global structure.
-We present a controlled synthetic dataset inspired by the intricate stone reliefs found
-in heritage artifacts (such as Khachkars or decorative steles). The dataset consists
-of parametrically generated meshes derived from a canonical cube primitive. These
+<li>We present a controlled synthetic dataset inspired by the intricate stone reliefs found
+in heritage artifacts (such as Khachkars or decorative steles).
+<li>The dataset consists of parametrically generated meshes derived from a canonical cube primitive. These
 objects are procedurally sculpted to emulate the engraving and relief patterns of
 real-world artifacts.<br/><br/>
-By participating in this track, researchers will test the ability of their algorithms
-to reconstruct 3D objects from a synthetic but realistic dataset of 2D renderings.
+By participating in this track, <strong>researchers will test the ability of their algorithms
+to reconstruct 3D objects</strong> from a synthetic but realistic dataset of 2D renderings.
           </p>
         </div>
       </div>
@@ -573,12 +574,13 @@ to reconstruct 3D objects from a synthetic but realistic dataset of 2D rendering
         <h2 class="title is-3">The Challenge</h2>
         <div class="content has-text-justified">
           <p>
-		  As mentioned before, 2D renderings are generated from 90 poses around each object.
-            The challenge is to <strong>reconstruct the objects from their 2D renderings</strong>; that is, to recompose the original 3D object from these renderings.
+		  As mentioned before, we produce 90 2D renderings around each object.
+      The challenge consists in <strong>reconstructing the objects from their 2D renderings</strong>; that is, to recompose the original 3D object from these renderings.
 			<br/><br/>
-			Researchers may employ
-any 3D reconstruction methods they find suitable. Evaluation will be performed
-using the weighted metric described above.
+			<li>Researchers may employ
+any 3D reconstruction methods they find suitable.</li>
+<li>Evaluation will be performed
+using a weighted metric that focuses on the reconstruction quality of the heritage features.</li>
           </p>
         </div>
       </div>
@@ -604,10 +606,10 @@ The reconstruction similarity to the ground truth can be ponderated by using the
 weights provided by each category in the per-vertex metadata. We refer to this as
 the “Semantic Weighting Scheme.” An initial set of weights is associated with the
 following ground truth categories:
-<li>Corners: High importance to corner preservation (structural integrity).</li>
-<li>Edges: Moderate importance to sharp transitions.</li>
-<li>Sculpted Reliefs: Priority given to the artistic/historical surface content.</li>
-<li>Flat Faces: Baseline importance.</li>
+<li><strong>Corners:</strong> High importance to corner preservation (structural integrity).</li>
+<li><strong>Edges:</strong> Moderate importance to sharp transitions.</li>
+<li><strong>Sculpted Reliefs:</strong> Priority given to the artistic/historical surface content.</li>
+<li><strong>Flat Faces:</strong> Baseline importance.</li>
 
 <div class="hero-body">
 	<div class="teaser-image-wrapper" align="middle">
@@ -677,7 +679,7 @@ in Blender with realistic conditions.
 </div>
 
 <strong>We provide these renderings</strong>, which practicioners
-should use to reconstruct the 3D objects. We will coollect the 3D objects and
+should use to reconstruct the 3D objects. We will collect the 3D objects and
 evaluate the quality using a Feature-Aware Weighted Metric (Weighted Chamfer Distance).
 
 
@@ -706,6 +708,23 @@ evaluate the quality using a Feature-Aware Weighted Metric (Weighted Chamfer Dis
         <div class="content has-text-justified">
           <p>
             This track does not use a query set. Participants will reconstruct 3D models from the provided multi-view renderings, and submissions will be evaluated against ground-truth meshes with annotated data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">Submission</h2>
+        <div class="content has-text-justified">
+          <p>
+             Please, upload the dataset to any public repository (e.g., Google Drive, Dropbox, etc.) and share the link with us via email to <a href="mailto:cllull@dcc.uchile.cl">cllull@dcc.uchile.cl</a>.
+             <br/><br/>
+             If you have problems uploading large files, please contact us via email. Also, if you have problems with time, please contact us before the submission deadline (you may consider uploading an MD5 file).
           </p>
         </div>
       </div>
