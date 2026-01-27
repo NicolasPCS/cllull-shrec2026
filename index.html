@@ -350,13 +350,74 @@
           alt="Teaser visualization of the project"
           class="teaser-image"
           loading="lazy"
+		  width="300"
+        >
+		<img 
+          src="static/images/frame_042_normal.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+        >
+		<img 
+          src="static/images/frame_042_large.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+        >
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;
+		<img 
+          src="static/images/frame_042_realistic.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+        >
+		<img 
+          src="static/images/frame_042_wide.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+        >
+		
+      </div>
+      <!-- TODO: Replace with your video description -->
+      <h2 class="subtitle has-text-centered">
+        Dataset construction: from one image, take its illumination information and get 4 different objects: normal, large, realistic and wide.
+      </h2>
+    </div>
+	
+	<div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/videos/banner_video.mp4" type="video/mp4">
+      </video> -->
+      <!-- Teaser image -->
+      <div class="teaser-image-wrapper" align="middle">
+		<img 
+          src="static/images/Renderings_1.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+		  align="middle"
+          loading="lazy"
+		  width="600"
         >
       </div>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Convert the original image to grayscale, then scale.
+        Rendering samples for the realistic verision. Participants will be provided with 90 renderings similar to these for reconstructing each object.
       </h2>
     </div>
+	
   </div>
 </section>
 <!-- End teaser video -->
@@ -373,7 +434,7 @@
             This track aims to shift the focus of 3D retrieval from global shape matching to the recognition of fine-grained, localized surface details—such as engravings, erosion patterns and reliefs, which are often the defining features of cultural heritage artifacts (e.g., armenian Khachkars). Key elements of the proposal:
 
 <br>• <strong>Task:</strong> 3D reconstruction and retrieval based on localized surface features from multi-view synthetic renderings.
-<br>• <strong>Novel Dataset:</strong> A procedurally generated, semantically annotated synthetic dataset of sculpted stone artifacts, providing full control and a feature-aware ground truth with per-vertex semantic categories (e.g., corners, edges, sculpted reliefs).
+<br>• <strong>Novel Synthetic Dataset:</strong> A procedurally generated, semantically annotated synthetic dataset of sculpted stone artifacts, providing full control and a feature-aware ground truth with per-vertex semantic categories (e.g., corners, edges, sculpted reliefs).
 <br>• <strong>Evaluation:</strong> A novel "Semantic Weighting Scheme" for evaluation, allowing performance metrics to be weighted by the cultural or structural importance of different surface regions.
 <br>• <strong>Replicability:</strong> The synthetic pipeline ensures reproducibilty.<br>
 
@@ -393,32 +454,33 @@ This track is designed to challenge and evaluate the ability of state-of-the-art
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
+	   <h2 class="title is-3">Dataset Samples</h2><br/>Participants will be provided with 90 rendering captures around the generated objects. Here are some captures for the dataset.
         <!-- TODO: Replace with your research result images -->
         <img src="static/images/frame_042_realistic.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          Renderings for object realistic from image 0001.
+          Rendering for object 0001, realistic version.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/frame_042_large.png" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Renderings for object large from image 0001.
+          Rendering for object 0001, large version.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/frame_042_normal.png" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Renderings for object normal from image 0001.
+          Rendering for object 0001, normal version.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
       <img src="static/images/frame_042_wide.png" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Renderings for object wide from image 0001.
+        Rendering for object 0001, wide version.
       </h2>
     </div>
   </div>
@@ -493,9 +555,9 @@ We present a controlled synthetic dataset inspired by the intricate stone relief
 in heritage artifacts (such as Khachkars or decorative steles). The dataset consists
 of parametrically generated meshes derived from a canonical cube primitive. These
 objects are procedurally sculpted to emulate the engraving and relief patterns of
-real-world artifacts.
+real-world artifacts.<br/><br/>
 By participating in this track, researchers will test the ability of their algorithms
-to reconstruct 3D objects from a synthetic but realistic rendering of Khachkars
+to reconstruct 3D objects from a synthetic but realistic dataset of 2D renderings.
           </p>
         </div>
       </div>
@@ -511,7 +573,10 @@ to reconstruct 3D objects from a synthetic but realistic rendering of Khachkars
         <h2 class="title is-3">The Challenge</h2>
         <div class="content has-text-justified">
           <p>
-            The challenge is to reconstruct the objects from their 2D renderings. Researchers may employ
+		  As mentioned before, 2D renderings are generated from 90 poses around each object.
+            The challenge is to <strong>reconstruct the objects from their 2D renderings</strong>; that is, to recompose the original 3D object from these renderings.
+			<br/><br/>
+			Researchers may employ
 any 3D reconstruction methods they find suitable. Evaluation will be performed
 using the weighted metric described above.
           </p>
@@ -530,7 +595,7 @@ using the weighted metric described above.
         <h2 class="title is-3">The Dataset</h2>
         <div class="content has-text-justified">
           <p>
-<strong>The Dataset & Feature-Aware Ground Truth</strong>
+<strong><h3>The Dataset & Feature-Aware Ground Truth</h3></strong>
 <br/>
 The dataset is generated using a novel procedural pipeline that combines mesh
 sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex
@@ -544,8 +609,26 @@ following ground truth categories:
 <li>Sculpted Reliefs: Priority given to the artistic/historical surface content.</li>
 <li>Flat Faces: Baseline importance.</li>
 
+<div class="hero-body">
+	<div class="teaser-image-wrapper" align="middle">
+		<img 
+          src="static/images/Weights.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+		  width="300"
+		>
+      </div>
+      <!-- TODO: Replace with your video description -->
+      <h5 class="subtitle has-text-centered">
+        Per-vertex classification.
+      </h5>
+    </div>
+		
+		
+
 <br/><br/>
-<strong>Dataset Characteristics:</strong>
+<strong><h3>Dataset Characteristics:</h3></strong>
 <br/>
 Researchers will be provided with the renderings of the objects to facilitate their
 reconstructions.
@@ -556,20 +639,73 @@ and an HDRI map to enhance realistic illumination reflection.</li>
 <li>Resolution: Images will be 1920 × 1080 pixels in PNG format.</li>
 
 <br/><br/>
-<strong>Dataset Elaboration</strong><br/>
-<image src="static/images/image_gray_scale.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
-<image src="static/images/camera_poses.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
+<strong><h3>Dataset Elaboration</h3></strong><br/>
 
-<image src="static/images/Renderings_1.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
-<image src="static/images/Renderings_2.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
-<image src="static/images/Renderings_3.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
-
-<image src="static/images/Extract_back_add_texture.png" alt="Teaser visualization of the project" loading="lazy"/><br/>
 We take an image and sculpt the content into a 3D mesh. After that, we render 90 images
-in Blender with realistic conditions. We provide this renderings, which practicioners
+in Blender with realistic conditions. 
+
+<div class="hero-body">
+	<div class="teaser-image-wrapper" align="middle">
+		<image src="static/images/image_gray_scale.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
+	</div>
+  <h5 class="subtitle has-text-centered">
+	Extract illumination information and use it as height for the mesh.
+  </h5>
+</div>
+
+<div class="hero-body">
+<div class="teaser-image-wrapper" align="middle">
+<image src="static/images/camera_poses.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
+</div>
+
+  <!-- TODO: Replace with your video description -->
+  <h5 class="subtitle has-text-centered">
+	90 camera poses around the object.
+  </h5>
+</div>
+
+<div class="hero-body">
+
+	<div class="teaser-image-wrapper" align="middle">
+		<image src="static/images/Renderings_1.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
+		<image src="static/images/Renderings_2.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
+		<image src="static/images/Renderings_3.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
+	</div>
+	  <h5 class="subtitle has-text-centered">
+	  Samples of image renderings provided to participants.
+	  </h5>
+</div>
+
+<strong>We provide these renderings</strong>, which practicioners
 should use to reconstruct the 3D objects. We will coollect the 3D objects and
 evaluate the quality using a Feature-Aware Weighted Metric (Weighted Chamfer Distance).
 
+
+<div class="hero-body">
+	<div class="teaser-image-wrapper" align="middle">
+		<image src="static/images/Extract_back_add_texture.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
+	</div>	
+	<h5 class="subtitle has-text-centered">
+		Extraction of Background.
+	</h5>
+</div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">Evaluation Criteria and Query Set</h2>
+        <div class="content has-text-justified">
+          <p>
+            This track does not use a query set. Participants will reconstruct 3D models from the provided multi-view renderings, and submissions will be evaluated against ground-truth meshes with annotated data.
           </p>
         </div>
       </div>
@@ -581,22 +717,24 @@ evaluate the quality using a Feature-Aware Weighted Metric (Weighted Chamfer Dis
 
 
 
-
-
 <!-- Paper poster -->
+<!--
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
       <!-- TODO: Replace with your poster PDF -->
+	  <!--
       <iframe  src="static/pdfs/SHREC_2026_Proposal.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
   </section>
+  -->
 <!--End paper poster -->
+
 
 
 <!-- Important dates -->
@@ -613,7 +751,8 @@ Important dates
 
     <br>• <strong>January 9, 2026:</strong> Submission deadline for track proposals.
     <br>•  <strong>January 12, 2026:</strong> Notification of acceptance of track proposals.
-    <br>• <strong>January 12 to April 20, 2026:</strong> Each track has its own time line.
+	<br>• <strong>January 20 to March 30, 2026:</strong> Accepting 3D reconstruction submissions.
+    <br>• <strong>March 30 to April 10, 2026:</strong> Evaluation of 3D reconstructions and article elaboration.
     <br>•  <strong>April 20, 2026:</strong> Submission deadline for full papers for review.
   <!--
     <br>•  <strong>May 25, 2026:</strong> First review done, first stage decision on acceptance or rejection.
