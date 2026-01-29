@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage">
+  <meta name="title" content="SHREC 2026: Reconstruction of High-Frequency Geometry in Synthetic Heritage">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="The dataset is generated using a novel procedural pipeline that combines mesh sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex semantic metadata.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -21,7 +21,7 @@
   <!-- TODO: Replace with your institution or lab name -->
   <meta property="og:site_name" content="Shape Vision Lab">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage">
+  <meta property="og:title" content="SHREC 2026: Reconstruction of High-Frequency Geometry in Synthetic Heritage">
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="The dataset is generated using a novel procedural pipeline that combines mesh sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex semantic metadata.">
   <!-- TODO: Replace with your actual website URL -->
@@ -32,7 +32,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:author" content="Cristián Llull">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="KEYWORD1">
   <meta property="article:tag" content="KEYWORD2">
@@ -44,7 +44,7 @@
   <!-- TODO: Replace with first author's Twitter handle -->
   <meta name="twitter:creator" content="@ShapeVisionLab">
   <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage">
+  <meta name="twitter:title" content="SHREC 2026: Reconstruction of High-Frequency Geometry in Synthetic Heritage">
   <!-- TODO: Same as description above -->
   <meta name="twitter:description" content="The dataset is generated using a novel procedural pipeline that combines mesh sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex semantic metadata.">
   <!-- TODO: Same as social preview image above -->
@@ -74,7 +74,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage</title>
+  <title>SHREC 2026: Reconstruction of High-Frequency Geometry in Synthetic Heritage</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/Icon.png">
@@ -114,8 +114,8 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "SHREC 2026: Reconstruction of High-Frequency Geometry",
+    "description": "Official track page for SHREC 2026: Reconstruction of High-Frequency Geometry.",
     "author": [
       {
         "@type": "Person",
@@ -267,7 +267,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage</h1>
+            <h1 class="title is-1 publication-title">SHREC 2026: Reconstruction of High-Frequency Geometry in Synthetic Heritage</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
@@ -284,7 +284,10 @@
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Department of Computer Science - University of Chile, CENIA<br>SHREC 2026: Retrieval of High-Frequency Geometry in Synthetic Heritage</span>
+                    <span class="author-block">
+                      Department of Computer Science - University of Chile</br>
+                      CENIA
+                    </span>
                     <!-- TODO: Remove this line if no equal contribution -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
@@ -300,7 +303,21 @@
                         </span>
                         <span>Proposal</span>
                       </a>
-                    </span>
+                      </span>
+
+                      <span class="link-block">
+                        <a href="https://kaggle.com/datasets/bb8a21d706218ec70737383352dd833e75139d083c68d6c4c93f72457fe0cd43" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fab fa-kaggle"></i>
+                        </span>
+                        <span>Dataset</span>
+                      </a>
+                      </span>
+
+                    </div>
+                  </div>
+
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <!-- <span class="link-block">
@@ -344,56 +361,70 @@
         <source src="static/videos/banner_video.mp4" type="video/mp4">
       </video> -->
       <!-- Teaser image -->
-      <div class="teaser-image-wrapper">
+      
+      <div class="teaser-image-wrapper" align="middle">
+        <img 
+          src="static/images/Example_Dataset_Arrows.png" 
+          alt="Teaser visualization of the project"
+          class="teaser-image"
+          loading="lazy"
+          width="900"
+          >
+          <h2 class="subtitle has-text-centered">
+        Teaser of the four different object versions: normal, large, realistic and wide, with their derivatives:
+        cone, cylinder, sphere, egg, pyramid and package.
+          </h2>
+      </div>
+
+      <!-- <div class="teaser-image-wrapper">
         <img 
           src="static/images/image_gray_scale.png" 
           alt="Teaser visualization of the project"
           class="teaser-image"
           loading="lazy"
-		  width="300"
+          width="300"
         >
-		<img 
+        <img 
           src="static/images/frame_042_normal.png" 
           alt="Teaser visualization of the project"
           class="teaser-image"
           loading="lazy"
-		  width="300"
+          width="300"
         >
-		<img 
+        <img 
           src="static/images/frame_042_large.png" 
           alt="Teaser visualization of the project"
           class="teaser-image"
           loading="lazy"
-		  width="300"
+          width="300"
         >
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;
-		<img 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <img 
           src="static/images/frame_042_realistic.png" 
           alt="Teaser visualization of the project"
           class="teaser-image"
           loading="lazy"
-		  width="300"
+          width="300"
         >
-		<img 
+        <img 
           src="static/images/frame_042_wide.png" 
           alt="Teaser visualization of the project"
           class="teaser-image"
           loading="lazy"
-		  width="300"
-        >
-		
-      </div>
+          width="300"
+        > -->
+        
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
+      <!-- <h2 class="subtitle has-text-centered">
         Dataset construction: from one image, take its illumination information and get 4 different objects: normal, large, realistic and wide.
-      </h2>
+      </h2> -->
     </div>
 	
 	<div class="hero-body">
@@ -409,12 +440,12 @@
           class="teaser-image"
 		  align="middle"
           loading="lazy"
-		  width="600"
+		  width="900"
         >
       </div>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Rendering samples for the realistic verision. Participants will be provided with 90 renderings similar to these for reconstructing each object.
+        Rendering samples for the realistic version. Participants will be provided with 90 renderings similar to these for reconstructing each object.
       </h2>
     </div>
 	
@@ -429,16 +460,29 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
           <p>
-            This track aims to shift the focus of 3D retrieval from global shape matching to the recognition of fine-grained, localized surface details—such as engravings, erosion patterns and reliefs, which are often the defining features of cultural heritage artifacts (e.g., armenian Khachkars). Key elements of the proposal:
-
-<br>• <strong>Task:</strong> 3D reconstruction and retrieval based on localized surface features from multi-view synthetic renderings.
-<br>• <strong>Novel Synthetic Dataset:</strong> A procedurally generated, semantically annotated synthetic dataset of sculpted stone artifacts, providing full control and a feature-aware ground truth with per-vertex semantic categories (e.g., corners, edges, sculpted reliefs).
-<br>• <strong>Evaluation:</strong> A novel "Semantic Weighting Scheme" for evaluation, allowing performance metrics to be weighted by the cultural or structural importance of different surface regions.
-<br>• <strong>Replicability:</strong> The synthetic pipeline ensures reproducibilty.<br>
-
-This track is designed to challenge and evaluate the ability of state-of-the-art algorithms to capture high-frequency geometric details critical to heritage documentation and analysis.
+            Cultural heritage artifacts are often defined not by their global shape, but by fine-grained surface details—engravings,
+            erosion patterns and reliefs. Standard 3D metrics often fail to capture these high-frequency nuances. 
+            <strong>SHREC 2026: High-Frequency Geometry</strong> challenges researchers to <strong>reconstruct</strong> detailed
+            3D meshes from multi-view synthetic renderings.
+          </p>
+          <p>
+            We introduce a novel procedurally generated dataset of sculpted stone artifacts with feature-aware ground truth. Key
+            features of this track include:
+          </p>
+          <ul>
+            <li><strong>Task:</strong> 3D reconstruction based on localized surface features, from 90 high-quality synthetic
+              renderings per object.</li>
+            <li><strong>Metric:</strong> A "Semantic Weighting Scheme" prioritizing semantically significant features (e.g., corners,
+              reliefs) over flat surfaces.</li>
+            <li><strong>Replicability:</strong> Our procedural pipeline allows for full reproducibility. We align with the
+              <a href="http://www.replicabilitystamp.org/" target="_blank">Graphics Replicability Stamp Initiative</a>.</li>
+            <li><strong>Publication:</strong> All results will be compiled into a joint paper to be submitted to <em>Computers &
+              Graphics</em> upon acceptance.</li>
+          </ul>
+          <p>
+          This track is designed to challenge and evaluate the ability of state-of-the-art algorithms to capture high-frequency
+          geometric details critical to heritage documentation and analysis.
           </p>
         </div>
       </div>
@@ -490,301 +534,270 @@ This track is designed to challenge and evaluate the ability of state-of-the-art
 <!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
-
 <!-- Track -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="content has-text-justified">
-        <h2 class="title is-3">The Track</h2>
-        <div class="content has-text-justified">
-          <p>
-            In cultural heritage, the value of an artifact often lies not in its overall shape,
-but in its surface details—such as engravings, erosion patterns and reliefs. This
-track focuses on 3D analysis to achieve geometric fidelity in 3D reconstruction from
-multiple-view images. We introduce a novel challenge focused on retrieving objects
-based on localized surface features rather than global structure.
-We present a controlled synthetic dataset inspired by the intricate stone reliefs found
-in heritage artifacts (such as Khachkars or decorative steles). The dataset consists
-of parametrically generated meshes derived from a canonical cube primitive. These
-objects are procedurally sculpted to emulate the engraving and relief patterns of
-real-world artifacts.<br/><br/>
-By participating in this track, researchers will test the ability of their algorithms
-to reconstruct 3D objects from a synthetic but realistic dataset of 2D renderings.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="content has-text-justified">
-        <h2 class="title is-3">The Challenge</h2>
-        <div class="content has-text-justified">
-          <p>
-		  As mentioned before, 2D renderings are generated from 90 poses around each object.
-            The challenge is to <strong>reconstruct the objects from their 2D renderings</strong>; that is, to recompose the original 3D object from these renderings.
-			<br/><br/>
-			Researchers may employ
-any 3D reconstruction methods they find suitable. Evaluation will be performed
-using the weighted metric described above.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="content has-text-justified">
-        <h2 class="title is-3">The Dataset</h2>
-        <div class="content has-text-justified">
-          <p>
-<strong><h3>The Dataset & Feature-Aware Ground Truth</h3></strong>
-<br/>
-The dataset is generated using a novel procedural pipeline that combines mesh
-sculpting with semantic vertex annotation, i.e., our ground truth includes per-vertex
-semantic metadata.<br/><br/>
-The reconstruction similarity to the ground truth can be ponderated by using the
-weights provided by each category in the per-vertex metadata. We refer to this as
-the “Semantic Weighting Scheme.” An initial set of weights is associated with the
-following ground truth categories:
-<li>Corners: High importance to corner preservation (structural integrity).</li>
-<li>Edges: Moderate importance to sharp transitions.</li>
-<li>Sculpted Reliefs: Priority given to the artistic/historical surface content.</li>
-<li>Flat Faces: Baseline importance.</li>
-
-<div class="hero-body">
-	<div class="teaser-image-wrapper" align="middle">
-		<img 
-          src="static/images/Weights.png" 
-          alt="Teaser visualization of the project"
-          class="teaser-image"
-          loading="lazy"
-		  width="300"
-		>
-      </div>
-      <!-- TODO: Replace with your video description -->
-      <h5 class="subtitle has-text-centered">
-        Per-vertex classification.
-      </h5>
-    </div>
-		
-		
-
-<br/><br/>
-<strong><h3>Dataset Characteristics:</h3></strong>
-<br/>
-Researchers will be provided with the renderings of the objects to facilitate their
-reconstructions.
-<li>Materiality: Objects are rendered with physically based materials (high rough-
-ness, low metallicity) approximating diffuse stone.</li>
-<li>Environment: The rendering uses two suns to create a realistic world scenario
-and an HDRI map to enhance realistic illumination reflection.</li>
-<li>Resolution: Images will be 1920 × 1080 pixels in PNG format.</li>
-
-<br/><br/>
-<strong><h3>Dataset Elaboration</h3></strong><br/>
-
-We take an image and sculpt the content into a 3D mesh. After that, we render 90 images
-in Blender with realistic conditions. 
-
-<div class="hero-body">
-	<div class="teaser-image-wrapper" align="middle">
-		<image src="static/images/image_gray_scale.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
-	</div>
-  <h5 class="subtitle has-text-centered">
-	Extract illumination information and use it as height for the mesh.
-  </h5>
-</div>
-
-<div class="hero-body">
-<div class="teaser-image-wrapper" align="middle">
-<image src="static/images/camera_poses.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
-</div>
-
-  <!-- TODO: Replace with your video description -->
-  <h5 class="subtitle has-text-centered">
-	90 camera poses around the object.
-  </h5>
-</div>
-
-<div class="hero-body">
-
-	<div class="teaser-image-wrapper" align="middle">
-		<image src="static/images/Renderings_1.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
-		<image src="static/images/Renderings_2.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
-		<image src="static/images/Renderings_3.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
-	</div>
-	  <h5 class="subtitle has-text-centered">
-	  Samples of image renderings provided to participants.
-	  </h5>
-</div>
-
-<strong>We provide these renderings</strong>, which practicioners
-should use to reconstruct the 3D objects. We will coollect the 3D objects and
-evaluate the quality using a Feature-Aware Weighted Metric (Weighted Chamfer Distance).
-
-
-<div class="hero-body">
-	<div class="teaser-image-wrapper" align="middle">
-		<image src="static/images/Extract_back_add_texture.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
-	</div>	
-	<h5 class="subtitle has-text-centered">
-		Extraction of Background.
-	</h5>
-</div>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="content has-text-justified">
-        <h2 class="title is-3">Evaluation Criteria and Query Set</h2>
-        <div class="content has-text-justified">
-          <p>
-            This track does not use a query set. Participants will reconstruct 3D models from the provided multi-view renderings, and submissions will be evaluated against ground-truth meshes with annotated data.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<!-- Paper poster -->
-<!--
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-	  <!--
-      <iframe  src="static/pdfs/SHREC_2026_Proposal.pdf" width="100%" height="550">
-          </iframe>
         
+        <h2 class="title is-3">The Task & Dataset</h2>
+        
+        <h3 class="title is-4">Goal</h3>
+        <p>
+          Participants are provided with <strong>90 high-quality 2D renderings</strong> per object, simulating a
+          realistic capture setup (physically based materials, dual-sun lighting, HDRI maps). 
+          The goal is to <strong>reconstruct the original 3D object</strong> from these images. While researchers
+          may employ any reconstruction method (Photogrammetry, NeRF, Gaussian Splatting, etc.), the challenge
+          emphasizes the <strong>geometric fidelity of surface details</strong> (engravings and reliefs).
+        </p>
+
+        <h3 class="title is-4">Dataset Characteristics</h3>
+        <p>
+          The dataset consists of procedurally sculpted meshes derived from a canonical cube. 
+        </p>
+        <ul>
+            <li><strong>Input:</strong> 90 PNG images (1920×1080) per object.</li>
+            <li><strong>Materials:</strong> Approximated diffuse stone (high roughness, low metallicity).</li>
+            <li><strong>Camera Poses:</strong> We provide full camera intrinsics and extrinsics in COLMAP format for every image.</li> 
+        </ul>
+
+        <h3 class="title is-4">Geometric Deformations (Derivatives)</h3>
+        <p>
+          To test the robustness of reconstruction algorithms across different topologies, our dataset extends beyond the canonical cube. 
+          We apply a novel deformation method to the four base styles (Normal, Large, Realistic, Wide), resulting in <strong>6 geometric derivatives</strong> for each style.
+        </p>
+        <p>
+          They are complex 3D shapes morphed into the topological semblance of:
+          <strong>Cone, Cylinder, Egg, Package, Pyramid and Sphere</strong>.
+          <!-- TODO: Insert images instead of just the list items -->
+        </p>
+
+        <h3 class="title is-4">Evaluation: Semantic Weighting</h3>
+        <p>
+          We utilize a novel <strong>Semantic Weighting Scheme</strong> where reconstruction errors are weighted based on
+          vertex importance in the ground truth:
+        </p>
+        <div class="content is-centered">
+            <table class="table is-bordered" style="margin: 0 auto;">
+                <tr>
+                    <th>Category</th>
+                    <th>Importance</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Sculpted Reliefs</td>
+                    <td>High</td>
+                    <td>Artistic/historical surface content.</td>
+                </tr>
+                <tr>
+                    <td>Corners</td>
+                    <td>High</td>
+                    <td>Structural integrity.</td>
+                </tr>
+                <tr>
+                    <td>Edges</td>
+                    <td>Medium</td>
+                    <td>Sharp transitions.</td>
+                </tr>
+                <tr>
+                    <td>Flat Faces</td>
+                    <td>Low</td>
+                    <td>Baseline geometry.</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="columns is-centered">
+            <div class="column has-text-centered">
+                 <img src="static/images/Weights.png" alt="Semantic Weights" style="max-width: 400px;">
+                 <p class="is-size-7">Visualization of per-vertex semantic weights.</p>
+            </div>
+        </div>
+        This track does not use a query set. Participants will reconstruct 3D models from the provided multi-view renderings,
+        and submissions will be evaluated against ground-truth meshes with annotated data.
       </div>
     </div>
-  </section>
-  -->
-<!--End paper poster -->
+  </div>
+</section>
+		
 
-
-
-<!-- Important dates -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">SHREC Time Schedule<br/>Important dates</h2>
-        <div class="content has-text-justified is-normal">
-          <p>
-            SHREC Time Schedule
+      <div class="content has-text-justified">
+          <h2 class="title is-3">Dataset Reproducibility</h2>
 
-Important dates
+          We take an image and sculpt the content into a 3D mesh. After that, we render 90 images
+          in Blender with realistic conditions. 
 
-    <br>• <strong>January 9, 2026:</strong> Submission deadline for track proposals.
-    <br>•  <strong>January 12, 2026:</strong> Notification of acceptance of track proposals.
-	<br>• <strong>January 20 to March 30, 2026:</strong> Accepting 3D reconstruction submissions.
-    <br>• <strong>March 30 to April 10, 2026:</strong> Evaluation of 3D reconstructions and article elaboration.
-    <br>•  <strong>April 20, 2026:</strong> Submission deadline for full papers for review.
-  <!--
-    <br>•  <strong>May 25, 2026:</strong> First review done, first stage decision on acceptance or rejection.
-    <br>•  <strong>June 19, 2026:</strong> First revision due.
-    <br>•  <strong>July 3, 2026:</strong> Second stage of reviews complete, decision on acceptance, rejection, or acceptance as short paper.
-    <br>•  <strong>July 20, 2026:</strong> Final version submission.
-    <br>• <strong>July 30, 2026:</strong> Final decision on acceptance or rejection.
-    <br>•  <strong>September 2026:</strong> Publication online in Computers & Graphics journal.
-    <br>• <strong>September 3-4, 2026:</strong> Presentation at the Eurographics 2026 Symposium on 3D Object Retrieval.
-   -->
-            
+          <div class="columns is-centered is-vcentered">
+            <div class="column is-8">
+              <div class="teaser-image-wrapper" align="middle">
+                <img src="static/images/image_gray_scale.png" alt="Image gray scale" loading="lazy" width=300/><br/>
+                <p class="is-size-7">Extract illumination information and use it as height for the mesh.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-centered is-vcentered">
+            <div class="column is-8">
+              <div class="teaser-image-wrapper" align="middle">
+               <img src="static/images/camera_poses.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
+               <p class="is-size-7">90 camera poses around the object.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-centered is-vcentered">
+           <div class="column is-10">
+
+             <div class="teaser-image-wrapper" align="middle">
+                <img src="static/images/Renderings_1.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
+                <img src="static/images/Renderings_2.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
+                <img src="static/images/Renderings_3.png" alt="Teaser visualization of the project" loading="lazy" width=400/>
+                <p class="is-size-7">Samples of image renderings provided to participants.</p>
+             </div>
+           </div>
+          </div>
+          <div class="content has-text-justified">
+            <strong>We provide these renderings</strong>, which practitioners
+            should use to reconstruct the 3D objects. We will collect the 3D objects and
+            evaluate the quality using a Feature-Aware Weighted Metric (Weighted Chamfer Distance).
+          </div>
+
+          <div class="columns is-centered is-vcentered">
+             <div class="column is-8">
+                <div class="teaser-image-wrapper" align="middle">
+                  <img src="static/images/Extract_back_add_texture.png" alt="Teaser visualization of the project" loading="lazy" width=300/><br/>
+                   <p class="is-size-7">Extraction of Background.</p>
+                </div>
+              </div>
+            </div>
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
+<section class="section">
+  <div class="container is-max-desktop">
+    
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Registration</h2>
+        <div class="content has-text-justified">
+          <p>
+            To participate in this track, please register by sending an email to <a href="mailto:cllull@dcc.uchile.cl">cllull@dcc.uchile.cl</a>. 
+            Please include the name of your team members and your institution. Registered participants will receive updates regarding the dataset and submission guidelines.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Schedule</h2>
+        <div class="content">
+          <table class="table is-fullwidth is-striped">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>January 12, 2026</strong></td>
+                <td>Track begins / Dataset Release</td>
+              </tr>
+              <tr>
+                <td><strong>March 15, 2026</strong></td>
+                <td>Registration Deadline (Recommended)</td>
+              </tr>
+              <tr>
+                <td><strong>April 3, 2026</strong></td>
+                <td><strong>Submission Deadline for Reconstruction Results</strong></td>
+              </tr>
+              <tr>
+                <td><strong>April 4-12, 2026</strong></td>
+                <td><strong>Evaluation and Results Processing</strong></td>
+              </tr>
+              <tr>
+                <td><strong>April 20, 2026</strong></td>
+                <td>Submission of full paper to SHREC</td>
+              </tr>
+              <tr>
+                <td><strong>May 25, 2026:</strong></td>
+                <td>First review done, notification of paper acceptance</td>
+              </tr>
+              <tr>
+                <td><strong>July 3, 2026:</strong></td>
+                <td>Second stage of reviews complete, decision on acceptance, rejection, or acceptance as short paper.</td>
+              </tr>
+              <tr>
+                <td><strong>July 30, 2026:</strong></td>
+                <td>Final decision on acceptance or rejection.</td>
+              </tr>
+              <tr>
+                <td><strong>Sept 3-4, 2026</strong></td>
+                <td>Presentation at Eurographics 2026 (3DOR)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--
+<br>•  <strong>January 9, 2026:</strong> Submission deadline for track proposals.
+<br>•  <strong>January 12, 2026:</strong> Notification of acceptance of track proposals.
+<br>•  <strong>January 20 to March 30, 2026:</strong> Accepting 3D reconstruction submissions.
+<br>•  <strong>March 30 to April 10, 2026:</strong> Evaluation of 3D reconstructions and article elaboration.
+<br>•  <strong>April 20, 2026:</strong> Submission deadline for full papers for review.
+<br>•  <strong>May 25, 2026:</strong> First review done, first stage decision on acceptance or rejection.
+<br>•  <strong>June 19, 2026:</strong> First revision due.
+<br>•  <strong>July 3, 2026:</strong> Second stage of reviews complete, decision on acceptance, rejection, or acceptance as short paper.
+<br>•  <strong>July 20, 2026:</strong> Final version submission.
+<br>•  <strong>July 30, 2026:</strong> Final decision on acceptance or rejection.
+<br>•  <strong>September 2026:</strong> Publication online in Computers & Graphics journal.
+<br>•  <strong>September 3-4, 2026:</strong> Presentation at the Eurographics 2026 Symposium on 3D Object Retrieval.
+-->
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">Submission</h2>
+        <div class="content has-text-justified">
+          <p>
+             Please, upload the dataset to any public repository (e.g., Google Drive, Dropbox, etc.) and share the link with us via email.
+             <br/>
+             The submission email address is
+              <strong><a href="mailto:cllull@dcc.uchile.cl">cllull@dcc.uchile.cl</a></strong>.
+             <br/><br/>
+             If you have problems uploading large files, please contact us via email. Also, if you have problems with time, please contact us before the submission deadline (you may consider uploading an MD5 file).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">Contact</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+        <!--<button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
           <i class="fas fa-copy"></i>
           <span class="copy-text">Copy</span>
         </button>
-      </div>
-      <!-- <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+        -->
+      </div> <!--
+  <pre id="bibtex-code"><code>@article{YourPaperKey2024,
   title={Your Paper Title Here},
   author={First Author and Second Author and Third Author},
   journal={Conference/Journal Name},
@@ -800,6 +813,7 @@ Important dates
     </div>
 </section>
 <!--End BibTex citation -->
+
 
 
   <footer class="footer">
